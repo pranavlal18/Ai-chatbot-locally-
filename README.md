@@ -21,12 +21,18 @@ Before running the project, ensure you have the following installed:
 
 ### Step 1: Clone the Repository
 Clone the repository to your local machine:
-```bash
+bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
 
 
-Step 3: Install Ollama
+### Step 2: Install Dependencies
+Install the required Python libraries:
+
+bash
+Copy
+pip install -r requirements.txt
+### Step 3: Install Ollama
 Ollama is required to run the language model locally. Follow these steps to install it:
 
 macOS/Linux:
@@ -46,7 +52,7 @@ Install Ollama in WSL:
 bash
 Copy
 curl -fsSL https://ollama.ai/install.sh | sh
-Step 4: Download a Model
+### Step 4: Download a Model
 Ollama supports various models, such as Llama, Mistral, and others. To download a model, use the ollama pull command.
 
 Download the llama2 model:
@@ -59,12 +65,14 @@ Verify the downloaded models:
 bash
 Copy
 ollama list
-Step 5: Add Logo
+### Step 5: Add Logo
 Place your logo image (e.g., llama.png) in the logo folder within the project directory. Ensure the logo path in the code matches the actual file location.
 
-Step 6: Run the Application
+### Step 6: Run the Application
 Start the Streamlit app:
 
 bash
 Copy
 streamlit run app.py
+### Step 7: Access the Chatbot
+Open your browser and navigate to http://localhost:8501.
